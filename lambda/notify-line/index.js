@@ -26,6 +26,7 @@ exports.handler = async (event) => {
       };
     }
   }
+  // TODO: use Promise.all
   return {
     statusCode: 200,
     body: 'OK!',

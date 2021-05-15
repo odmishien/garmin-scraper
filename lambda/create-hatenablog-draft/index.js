@@ -10,7 +10,7 @@ const client = new Blog({
   accessToken: process.env.ACCESS_TOKEN,
   accessTokenSecret: process.env.ACCESS_TOKEN_SECRET,
 });
-
+// FIXME: now get 401
 exports.handler = async (event) => {
   try {
     await client.postEntry({
